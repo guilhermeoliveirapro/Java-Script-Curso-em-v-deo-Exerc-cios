@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro Site</title>
+    <style>
+        body {
+            background-color: rgb(37, 0, 130);
+            color: rgb(255, 255, 255);
+            font-family: Arial, sans-serif;
+            font-size: 15pt;
+            text-align: center;
+            padding-top: 50px;
+    }   
+</style>
+</head> 
+<body>
+    <h1>SITE DO GUIZERME</h1>
+    <p id="mensagem"></p>
+
+    <script>
+        let nome = prompt("qual o seu nome?")
+        alert("Seu nome ficará salvo na nuvem de dados")
+        console.log(nome);  
+
+        //mostra no site
+        document.getElementById("mensagem").textContent = `Olá, ${nome}! Seja bem Vindo(a) ao meu site!`;
+    </script>
+</body>
+</html>
