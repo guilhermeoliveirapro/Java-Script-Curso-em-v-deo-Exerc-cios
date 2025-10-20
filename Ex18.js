@@ -20,7 +20,7 @@ function isNumero(n) {  // Condição para caso o valor seja maior que 100 ou me
 }
 
  function inLista(n, l) {  // Condição para caso o número já exista na lista
-    if (l.indexOf(Number(n)) != -1 ) {
+    if (l.indexOf(Number(n)) != -1 ) { // Se o valor inserido retornar -1 significa que não existe
         return true
     } else {
         return false
@@ -69,7 +69,7 @@ function finalizar() {
                 menor = valores[pos]
         }
 
-        media = soma/total
+        media = soma/total 
         res.innerHTML = ''
         res.innerHTML += `<p>Ao todo, temos ${total} valores cadastrados</p>`
         res.innerHTML += `<p>O maior valor informado foi ${maior}</p>`
